@@ -24,7 +24,6 @@ class CompanyFactory extends Factory
     {
         return [
             'name' => $this->faker->unique()->company(),
-            'email' => $this->faker->unique()->email(),
             'federation_id' => Federation::all()->random()->id,
         ];
     }

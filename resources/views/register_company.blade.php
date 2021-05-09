@@ -1,6 +1,6 @@
 @extends('layouts.template')
 
-@section('title') Cadastro @endsection
+@section('title') Cadastro de empresa @endsection
   
 @section('body')
     <div class="container">
@@ -11,9 +11,6 @@
         <div class="mb-3">
             <label class="form-label">Nome da Empresa</label>
             <input type="text" class="form-control" name="name" placeholder="Nome">
-            <br/>
-            <label class="form-label">Email</label>
-            <input type="email" class="form-control" name="email" placeholder="ecomp@ecomp.com">
             <br/>
             <label class="form-label">Federação</label>
             <select class="form-control" name="federation_id" aria-label="Default select example">
