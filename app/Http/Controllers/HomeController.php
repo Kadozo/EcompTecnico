@@ -15,30 +15,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $nUser = User::count();
-        $nCompany = Company::count();
-        return view('home',compact('nUser','nCompany'));
-        //return view('layouts.template');
+        return view('home');
     }
     public function login(){
         return view('login');
     }
     
     public function logged(Request $request){
-        
-        $verify = User::all()->where('email',$request->email)->first();
-        if($verify != null){
-            if($verify->password == $request->password){
-                $federations = Federation::orderby('name')->get();
-                return view('register_company',compact('federations'));
-            }
-            else{
-                return redirect('/login');
-            }
-        }
-        else{
-            return redirect('/login');
-        }
+        return view('register_company');
     }
 
 

@@ -23,12 +23,9 @@ Route::get('/search/{federation_id}', [HomeController::class,'searchCompanies'])
 
 //Autenticação
 Route::get('/login',[HomeController::class,'login']);
-Route::post('/logged',[HomeController::class,'logged']);
+Route::get('/logged',[HomeController::class,'logged']);
 
 //Cadastro de Usuário
 Route::get('/register',[UserController::class,'create']);
-Route::post('/register/done',[UserController::class, 'store']);
 
-//Cadastro de Empresas
-Route::post('/register/company/done',[CompanyController::class, 'store']);
 
