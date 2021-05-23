@@ -3,22 +3,22 @@
 @section('title') Pesquisa @endsection
   
 @section('body')
-    <div class="container">
+    <div class="container m-3">
       <table class="table table-hover table-borderless">
         <thead>
           <tr>
-            <th scope="col">Nome da Federação</th>
-            <th scope="col">Estado</th>
-            <th>Lista de Empresas</th>
+            <th class="text text-text" scope="col">Nome da Federação</th>
+            <th class="text text-text" scope="col">Estado</th>
+            <th class="text text-text">Lista de Empresas</th>
           </tr>
         </thead>
         <tbody>
           @foreach ($federations as $federation)
               
           <tr>
-            <td>{{$federation->name}}</td>
-            <td>{{$federation->state}}</td>
-            <td><a href="search/{{$federation->id}}">Ver lista</a></td>
+            <td class="text text-text">{{$federation->name}}</td>
+            <td class="text text-text">{{$federation->state}}</td>
+            <td class="text text-text"><a href="search/{{$federation->id}}">Ver lista</a></td>
           </tr>
 
           @endforeach

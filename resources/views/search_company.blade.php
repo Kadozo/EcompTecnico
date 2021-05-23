@@ -7,14 +7,14 @@
       <table class="table table-hover">
         <thead>
           <tr>
-            <th scope="col">Nome da Empresa</th>
+            <th class="text text-text" scope="col">Empresas</th>
           </tr>
         </thead>
         <tbody>
           @foreach ($companies as $company)
               
           <tr>
-            <td>{{$company->name}}</td>
+            <td class="text text-text">{{$company->name}}</td>
           </tr>
 
           @endforeach

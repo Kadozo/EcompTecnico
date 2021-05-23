@@ -4,9 +4,11 @@
     Login
 @endsection
 @section('body')
-<div class="container m-3">
-    <h1>LOGIN</h1>
+<h1  class="text-center text-primary text m-3">LOGIN</h1>
+<div class="row m-3 justify-content-center">
     <br>
-    <livewire:login>
+    <div class="col-8">
+        <livewire:login>
+    </div>
 </div>
 @endsection
